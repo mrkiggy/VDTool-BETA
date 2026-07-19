@@ -546,7 +546,7 @@ int main() {
     hideCursor();
 
     char options[NUM_OPTIONS][40] = {
-        "  Download Video               ",
+        "  Download Video / Audio       ",
         "  Download Images / Gallery    ",
         "  Convert Video / Image        ",
         "  Create GIF from Video        ",
