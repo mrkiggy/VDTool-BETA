@@ -334,7 +334,7 @@ void screenDownloadVideo() {
     for (int i = 0; i < count; i++) {
         char cmd[2048];
         snprintf(cmd, sizeof(cmd),
-                 "yt-dlp -o \"%%USERPROFILE%%/Downloads/%%(title)s.%%(ext)s\"");
+                 "yt-dlp --no-playlist -o \"%%USERPROFILE%%/Downloads/%%(title)s.%%(ext)s\"");
 
         if (audioOnly)   strcat(cmd, " -x --audio-format mp3");
         if (videoFormat)  strcat(cmd, " -f mp4");
